@@ -21,3 +21,22 @@ if (!function_exists('get_plugin_data')) {
 
 
 require 'vendor/autoload.php';
+
+
+
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/jigarbytes/agttest',
+	__FILE__,
+	'agttest'
+);
+
+/*echo "<pre>";
+print_r(get_class_methods($myUpdateChecker));
+echo "</pre>";*/
+
+//Optional: If you're using a private repository, specify the access token like this:
+//$myUpdateChecker->setAuthentication('your-token-here');
+
+//Optional: Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('master');
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
