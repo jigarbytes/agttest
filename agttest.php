@@ -3,7 +3,7 @@
 Plugin Name: AGT AUTO UPDATE
 Plugin URI: http://www.bytestechnolab.com/finale3d
 description: a plugin to create awesomeness and spread joy
-Version: 5.3.0
+Version: 8.0.0
 Author: BytesTeam
 Text Domain: finale3d
 Domain Path: languages
